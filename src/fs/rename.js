@@ -11,8 +11,7 @@ const rename = async () => {
         await access(destPath, constants.F_OK);
         console.error('FS operation failed');
         return;
-    } catch (e) {
-        //ignored
+    } catch (ignored) {
     }
 
     try {

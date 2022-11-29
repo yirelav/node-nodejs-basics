@@ -7,7 +7,7 @@ const transform = async () => {
 
 const reverseTransform = new Transform({
     transform: (chunk, encoding, done) => {
-        const newLineSymbol = "\n"; // for pretty output
+        const newLineSymbol = '\n'; // for pretty output
         const result = chunk.reverse().toString().trim() + newLineSymbol;
         done(null, result)
     }
