@@ -3,8 +3,8 @@ import path from 'path';
 
 
 const copy = async () => {
-    let srcPath = path.resolve('.\\files');
-    let destPath = path.resolve('.\\files_copy');
+    let srcPath = path.resolve('src\\fs\\files');
+    let destPath = path.resolve('src\\fs\\files_copy');
 
     try {
         await cp(srcPath, destPath, {force: false, errorOnExist: true, recursive: true})

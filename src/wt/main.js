@@ -4,7 +4,7 @@ import path from 'path';
 
 
 const performCalculations = async () => {
-    const workerPath = path.resolve('.\\worker.js');
+    const workerPath = path.resolve('src\\wt\\worker.js');
     const promises = [];
 
     for (let i = 0; i < cpus().length; i++) {

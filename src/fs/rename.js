@@ -4,8 +4,8 @@ import {access, constants} from "node:fs/promises";
 
 
 const rename = async () => {
-    let srcPath = Path.resolve('.\\files\\wrongFilename.txt');
-    let destPath = Path.resolve('.\\files\\properFilename.md');
+    let srcPath = Path.resolve('src\\fs\\files\\wrongFilename.txt');
+    let destPath = Path.resolve('src\\fs\\files\\properFilename.md');
 
     try {
         await access(destPath, constants.F_OK);

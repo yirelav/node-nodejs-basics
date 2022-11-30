@@ -4,7 +4,7 @@ import path from 'path';
 
 const create = async () => {
 
-    let src = path.resolve('.\\files\\fresh.txt');
+    let src = path.resolve('src\\fs\\files\\fresh.txt');
 
     try {
         await access(src, constants.F_OK);
